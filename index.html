@@ -24,6 +24,38 @@
   </title>
 
   <link
+    rel="canonical"
+    href="https://sheemetalksmoney.github.io/"
+  >
+
+  <!--
+    No favicon.png exists in images/ yet — add one and
+    uncomment this once it's uploaded, otherwise it 404s.
+  <link
+    rel="icon"
+    href="images/favicon.png"
+    type="image/png"
+  >
+  -->
+
+  <!-- Open Graph / social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SheemeTalksMoney | Financial Clarity with Chimi Njipwo">
+  <meta
+    property="og:description"
+    content="Life insurance education, policy reviews, financial coaching, and financial literacy with Chimi Njipwo."
+  >
+  <meta property="og:image" content="https://sheemetalksmoney.github.io/images/Lucie-headshot.png">
+  <meta property="og:url" content="https://sheemetalksmoney.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SheemeTalksMoney | Financial Clarity with Chimi Njipwo">
+  <meta
+    name="twitter:description"
+    content="Life insurance education, policy reviews, financial coaching, and financial literacy with Chimi Njipwo."
+  >
+  <meta name="twitter:image" content="https://sheemetalksmoney.github.io/images/Lucie-headshot.png">
+
+  <link
     rel="stylesheet"
     href="css/style.css"
   >
@@ -31,6 +63,16 @@
 
 
 <body>
+
+  <!--
+    Skip link for keyboard and screen-reader users.
+    Add a matching #main-content target and a
+    .skip-link style (visually hidden until focused)
+    in css/style.css.
+  -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
   <!-- =========================================
        HEADER / NAVIGATION
@@ -93,7 +135,7 @@
 
 
 
-  <main>
+  <main id="main-content">
 
 
     <!-- =========================================
@@ -161,17 +203,17 @@
           <div class="hero-trust">
 
             <span>
-              <i>✓</i>
+              <i aria-hidden="true">✓</i>
               Honest Education
             </span>
 
             <span>
-              <i>✓</i>
+              <i aria-hidden="true">✓</i>
               Personal Guidance
             </span>
 
             <span>
-              <i>✓</i>
+              <i aria-hidden="true">✓</i>
               Clear Next Steps
             </span>
 
@@ -187,9 +229,19 @@
 
           <div class="portrait-frame">
 
+            <!--
+              width/height below are placeholders set to the
+              image's aspect ratio to prevent layout shift —
+              update them to match Lucie-headshot.png's real
+              pixel dimensions.
+            -->
+
             <img
-              src="images/chimi-headshot.png"
+              src="images/Lucie-headshot.png"
               alt="Chimi Njipwo, licensed life insurance broker"
+              width="480"
+              height="480"
+              fetchpriority="high"
             >
 
           </div>
@@ -272,7 +324,13 @@
 
             <div style="text-align: center;">
 
-              <div class="play-button">
+              <!--
+                Decorative until the real video is wired up.
+                When it is, replace this div with a real
+                <button> (or the video/iframe itself) so it's
+                keyboard- and screen-reader-accessible.
+              -->
+              <div class="play-button" aria-hidden="true">
                 ▶
               </div>
 
@@ -344,7 +402,7 @@
             </span>
 
 
-            <div class="service-icon">
+            <div class="service-icon" aria-hidden="true">
               ♢
             </div>
 
@@ -395,7 +453,7 @@
             </span>
 
 
-            <div class="service-icon">
+            <div class="service-icon" aria-hidden="true">
               ☷
             </div>
 
@@ -448,7 +506,7 @@
             </span>
 
 
-            <div class="service-icon">
+            <div class="service-icon" aria-hidden="true">
               ♙
             </div>
 
@@ -501,7 +559,7 @@
             </span>
 
 
-            <div class="service-icon">
+            <div class="service-icon" aria-hidden="true">
               □
             </div>
 
@@ -562,9 +620,18 @@
 
         <div class="about-image">
 
+          <!--
+            width/height below are placeholders set to the
+            image's aspect ratio to prevent layout shift —
+            update them to match Lucie-headshot.png's real
+            pixel dimensions.
+          -->
           <img
-            src="images/chimi-headshot.png"
+            src="images/Lucie-headshot.png"
             alt="Chimi Njipwo"
+            width="480"
+            height="480"
+            loading="lazy"
           >
 
         </div>
@@ -603,7 +670,7 @@
 
             <div class="credential">
 
-              <span class="credential-icon">
+              <span class="credential-icon" aria-hidden="true">
                 ♢
               </span>
 
@@ -618,7 +685,7 @@
 
             <div class="credential">
 
-              <span class="credential-icon">
+              <span class="credential-icon" aria-hidden="true">
                 ♙
               </span>
 
@@ -682,7 +749,7 @@
 
           <article class="testimonial-card">
 
-            <span class="quote-mark">
+            <span class="quote-mark" aria-hidden="true">
               “
             </span>
 
@@ -709,7 +776,7 @@
 
           <article class="testimonial-card">
 
-            <span class="quote-mark">
+            <span class="quote-mark" aria-hidden="true">
               “
             </span>
 
@@ -736,7 +803,7 @@
 
           <article class="testimonial-card">
 
-            <span class="quote-mark">
+            <span class="quote-mark" aria-hidden="true">
               “
             </span>
 
@@ -777,7 +844,7 @@
       <div class="shell final-grid">
 
 
-        <div class="final-icon">
+        <div class="final-icon" aria-hidden="true">
           ◫
         </div>
 
@@ -901,7 +968,7 @@
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              ◎
+              <span aria-hidden="true">◎</span>
             </a>
 
 
@@ -913,7 +980,7 @@
               rel="noopener noreferrer"
               aria-label="TikTok"
             >
-              ♪
+              <span aria-hidden="true">♪</span>
             </a>
 
 
@@ -925,7 +992,7 @@
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              f
+              <span aria-hidden="true">f</span>
             </a>
 
 
@@ -937,7 +1004,7 @@
               rel="noopener noreferrer"
               aria-label="YouTube"
             >
-              ▶
+              <span aria-hidden="true">▶</span>
             </a>
 
 
@@ -949,7 +1016,7 @@
               rel="noopener noreferrer"
               aria-label="WhatsApp"
             >
-              ◉
+              <span aria-hidden="true">◉</span>
             </a>
 
           </div>
@@ -965,6 +1032,14 @@
           <h4>
             Important
           </h4>
+
+          <!--
+            IMPORTANT: these three currently point nowhere.
+            A licensed insurance broker's site typically needs
+            real Privacy Policy, Terms of Use, and state
+            licensing/producer Disclosures pages before launch —
+            replace the # hrefs below with the real pages.
+          -->
 
           <a href="#">
             Privacy Policy
@@ -1028,7 +1103,7 @@
 
     Choose Your Next Step
 
-    <span>
+    <span aria-hidden="true">
       →
     </span>
 
