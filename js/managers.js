@@ -11,11 +11,11 @@ const managers = {
 				},
 			instagram:{ 
 				id: "MrsGold-IG",
-				handle : " "
+				handle : ""
 				},
 			facebook: {
 				id: "MrsGold-IG",
-				handle: " "
+				handle: ""
 			}
 			// add fields are needed. 
 			
