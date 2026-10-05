@@ -6,7 +6,7 @@ const managers = {
 		platforms: {
 			tiktok: {
 				id: "MrsGold-TT",
-				handle: "@mymoneyera.bymrsgold"
+				handle: "@mymoneyera.bymrsgold",
 				url: "https://www.tiktok.com/@mymoneyera.bymrsgold"
 				},
 			instagram:{ 
@@ -14,13 +14,14 @@ const managers = {
 				handle : " "
 				},
 			facebook: {
-				id: "MrsGold-IG"
+				id: "MrsGold-IG",
 				handle: " "
 			}
+			// add fields are needed. 
 			
 		}
 	}// end MrsGold. 
 	
 	// ******** replicate for other managers. 
-	// add fields are needed. 
+		
 }
