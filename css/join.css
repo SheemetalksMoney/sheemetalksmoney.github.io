@@ -1,0 +1,111 @@
+/* =========================================================
+   Community join page (join/index.html)
+   Builds on booked.css; uses the tokens from style.css only.
+========================================================= */
+
+.join-hero {
+  padding: 48px 0 8px;
+  text-align: center;
+}
+
+.join-hero-shell {
+  max-width: 720px;
+}
+
+.join-photo {
+  width: 168px;
+  height: 168px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--gold);
+  box-shadow: var(--shadow);
+}
+
+.join-hero h1 {
+  margin-bottom: 0.35em;
+}
+
+.join-lede {
+  max-width: 560px;
+  margin: 0 auto 26px;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.join-cta {
+  font-size: 1.05rem;
+  padding: 16px 36px;
+}
+
+.join-host {
+  margin: 18px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.join-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+}
+
+.join-list li {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.join-list li:last-child {
+  border-bottom: 0;
+}
+
+.join-list-light {
+  margin-bottom: 22px;
+}
+
+.join-list-light li {
+  border-color: rgba(245, 240, 230, 0.18);
+}
+
+/* booked.css hides the inactive language with display:none;
+   the active one should flow inline next to the icon. */
+.join-list li > [data-lang] {
+  flex: 1;
+}
+
+.join-icon {
+  flex: 0 0 auto;
+  font-size: 1.2rem;
+}
+
+.join-final {
+  text-align: center;
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+@media (max-width: 560px) {
+  .join-hero {
+    padding: 32px 0 0;
+  }
+
+  .join-hero-shell {
+    padding: 0 16px;
+  }
+
+  .join-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .join-cta {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+  }
+}
