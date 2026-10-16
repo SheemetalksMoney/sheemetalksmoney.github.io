@@ -14,7 +14,7 @@ const managers = {
 				handle : ""
 				},
 			facebook: {
-				id: "MrsGold-IG",
+				id: "MrsGold-FB",
 				handle: ""
 			}
 			// add fields are needed. 
