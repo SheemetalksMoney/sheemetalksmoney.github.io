@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <!-- Confirmation page Calendly redirects to after a booking.
+       Not meant to show up in search results. -->
+  <meta name="robots" content="noindex">
+
+  <meta
+    name="theme-color"
+    content="#123d2e"
+  >
+
+  <title>
+    You're booked | SheemeTalksMoney
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="../css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/booked.css"
+  >
+</head>
+
+
+<body>
+
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
+  <header class="site-header">
+
+    <nav
+      class="nav shell"
+      aria-label="Main navigation"
+    >
+
+      <a
+        class="brand"
+        href="../"
+        aria-label="SheemeTalksMoney home"
+      >
+
+        <span class="brand-mark">
+          S
+        </span>
+
+        <span>
+          <strong>Sheeme</strong>TalksMoney
+        </span>
+
+      </a>
+
+
+      <!-- Language switch. js/booked.js picks the
+           visitor's browser language on first load. -->
+      <div
+        class="lang-switch"
+        role="group"
+        aria-label="Language / Langue"
+      >
+        <button type="button" data-set-lang="en">EN</button>
+        <button type="button" data-set-lang="fr">FR</button>
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main id="main-content">
+
+    <section class="booked">
+
+      <div class="shell booked-shell">
+
+
+        <!-- =====================================
+             CONFIRMATION
+        ====================================== -->
+
+        <div class="booked-head">
+
+          <p class="eyebrow">
+            <span data-lang="en">You're booked ✅</span>
+            <span data-lang="fr">C'est confirmé ✅</span>
+          </p>
+
+          <h1>
+            <span data-lang="en">See you soon<span class="js-first-name"></span>!</span>
+            <span data-lang="fr">À très bientôt<span class="js-first-name"></span> !</span>
+          </h1>
+
+          <!-- Filled in from Calendly's redirect details;
+               stays hidden if they aren't passed. -->
+          <p class="booked-when" hidden>
+            <span class="js-when"></span>
+          </p>
+
+          <p class="booked-lede">
+            <span data-lang="en">I'll call you at the number you gave.</span>
+            <span data-lang="fr">Je vous appellerai au numéro indiqué.</span>
+            <span class="js-video-line" hidden>
+              <span data-lang="en">Watch this short video first.</span>
+              <span data-lang="fr">Regardez d'abord cette courte vidéo.</span>
+            </span>
+          </p>
+
+        </div>
+
+
+        <!-- =====================================
+             VIDEO
+             Paste the YouTube/Vimeo link into
+             VIDEO_URL in js/booked.js. Until then
+             the written welcome below shows instead.
+        ====================================== -->
+
+        <div class="video-wrapper booked-video" hidden>
+          <iframe
+            class="js-video"
+            title="Welcome from Chimi"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="booked-welcome">
+
+          <p>
+            <span data-lang="en">Hi, I'm Chimi. Thank you for booking!</span>
+            <span data-lang="fr">Bonjour, c'est Chimi. Merci pour votre réservation !</span>
+          </p>
+
+          <p>
+            <span data-lang="en">On our call we'll look at where you are today, what you want, and your next step. No pressure.</span>
+            <span data-lang="fr">Pendant l'appel, on regarde où vous en êtes, ce que vous voulez, et votre prochaine étape. Sans pression.</span>
+          </p>
+
+        </div>
+
+
+        <!-- =====================================
+             HAVE THIS READY
+        ====================================== -->
+
+        <div class="booked-card">
+
+          <h2>
+            <span data-lang="en">Have this ready</span>
+            <span data-lang="fr">À préparer</span>
+          </h2>
+
+          <ol class="booked-list">
+            <li>
+              <span data-lang="en">Your top 1–2 money goals</span>
+              <span data-lang="fr">Vos 1 ou 2 objectifs principaux</span>
+            </li>
+            <li>
+              <span data-lang="en">Your monthly income and main bills</span>
+              <span data-lang="fr">Vos revenus et dépenses du mois</span>
+            </li>
+            <li>
+              <span data-lang="en">Any life insurance, 401(k) or savings you already have</span>
+              <span data-lang="fr">Vos assurances vie, 401(k) ou épargne actuelles</span>
+            </li>
+          </ol>
+
+          <p class="booked-note">
+            <span data-lang="en">Don't have it all? Come anyway.</span>
+            <span data-lang="fr">Il vous manque des infos ? Venez quand même.</span>
+          </p>
+
+        </div>
+
+
+        <!-- =====================================
+             NEXT STEP
+        ====================================== -->
+
+        <div class="booked-card booked-card-green">
+
+          <h2>
+            <span data-lang="en">While you wait</span>
+            <span data-lang="fr">En attendant</span>
+          </h2>
+
+          <p>
+            <span data-lang="en">Join my free community: money tips, free live sessions, and the $1,000 in 12&nbsp;Weeks challenge.</span>
+            <span data-lang="fr">Rejoignez ma communauté gratuite : conseils, sessions en direct et le défi 1&nbsp;000&nbsp;$ en 12&nbsp;semaines.</span>
+          </p>
+
+          <a
+            class="button button-gold js-community-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-lang="en">Join free →</span>
+            <span data-lang="fr">Rejoindre gratuitement →</span>
+          </a>
+
+        </div>
+
+
+        <p class="booked-change">
+          <span data-lang="en">Need a new time? Use the link in your confirmation email.</span>
+          <span data-lang="fr">Besoin d'un autre horaire ? Utilisez le lien dans votre e-mail de confirmation.</span>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <footer class="site-footer booked-footer">
+
+      <div class="shell copyright">
+
+        © 2026 SheemeTalksMoney.
+        All rights reserved.
+
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <script src="../js/booked.js"></script>
+
+</body>
+
+</html>

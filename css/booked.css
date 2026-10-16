@@ -1,0 +1,167 @@
+/* =========================================================
+   Booking confirmation page (booked/index.html)
+   Uses the tokens from style.css only.
+========================================================= */
+
+/* Keep [hidden] working on elements that set their own display. */
+[hidden] {
+  display: none !important;
+}
+
+/* Language toggle: only the active language's text shows. */
+html[lang="en"] [data-lang="fr"],
+html[lang="fr"] [data-lang="en"] {
+  display: none;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-switch button {
+  font: 600 0.85rem var(--font-sans);
+  padding: 8px 16px;
+  border: 0;
+  background: transparent;
+  color: var(--green-deep);
+  cursor: pointer;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: var(--green-deep);
+  color: var(--white);
+}
+
+.booked {
+  padding: 56px 0 72px;
+}
+
+.booked-shell {
+  max-width: 720px;
+  display: grid;
+  gap: 28px;
+}
+
+.booked-head h1 {
+  margin-bottom: 0.3em;
+}
+
+.booked-when {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--cream-dark);
+  color: var(--green-deep);
+  font-weight: 600;
+}
+
+.booked-lede {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.booked-video {
+  aspect-ratio: 16 / 9;
+  background: var(--green-deep);
+}
+
+.booked-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.booked-welcome {
+  padding: 28px;
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, var(--green-deep), var(--green-light));
+  color: var(--cream);
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.booked-welcome p {
+  margin: 0 0 10px;
+  color: var(--cream);
+}
+
+.booked-welcome p:last-child {
+  margin-bottom: 0;
+}
+
+.booked-card {
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.booked-card h2 {
+  font-size: 1.5rem;
+}
+
+.booked-card-green {
+  background: var(--green-deep);
+  border-color: var(--green-deep);
+  color: var(--cream);
+}
+
+.booked-card-green h2 {
+  color: var(--gold-light);
+}
+
+.booked-card-green p {
+  margin: 0 0 20px;
+  color: var(--cream);
+}
+
+.booked-list {
+  margin: 0;
+  padding-left: 1.3em;
+  font-size: 1.05rem;
+}
+
+.booked-list li {
+  margin-bottom: 8px;
+}
+
+.booked-note,
+.booked-change {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.booked-change {
+  margin: 0;
+  text-align: center;
+}
+
+.booked-footer {
+  padding: 24px 0;
+}
+
+@media (max-width: 560px) {
+  .booked {
+    padding: 36px 0 56px;
+  }
+
+  .booked-shell {
+    padding: 0 16px;
+  }
+
+  .booked-welcome,
+  .booked-card {
+    padding: 22px;
+  }
+
+  .booked-card .button {
+    white-space: normal;
+  }
+}
