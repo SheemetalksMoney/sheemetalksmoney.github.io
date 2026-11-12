@@ -1,14 +1,17 @@
 {
   "confirmed_by_user": true,
-  "source": "User asked for bright, light colors (Nov 2026). Don't ask again unless they want a change.",
-  "color_primary": "#FF4F81",
-  "color_primary_name": "bright pink",
+  "source": "User asked for bright, light colors, then swapped pink for light green (Nov 2026). Don't ask again unless they want a change.",
+  "color_primary": "#A8E6A1",
+  "color_primary_name": "light green (use as a fill/box color, not for text on light backgrounds)",
+  "color_primary_text": "#23893F",
+  "color_primary_text_name": "deeper green for readable text (highlight words, handle)",
   "color_accent": "#FFC83D",
-  "color_accent_name": "sunny yellow",
+  "color_accent_name": "sunny yellow (lines and accents, not text)",
   "background_light": "#FFF4DC",
+  "title_style": "dark text #2B2B2B on a light green box",
   "caption_box": "#FFFFFF",
   "caption_text": "#2B2B2B",
-  "caption_highlight": "#FF4F81",
+  "caption_highlight": "#23893F",
   "font": "DejaVu Sans Bold",
   "font_file": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 }
