@@ -33,7 +33,7 @@ Brand style is saved in `brand.json` next to this file.
 
 ## 6. Export
 - Vertical 9:16, 1080x1920 (scale and pad or crop as needed; never stretch).
-- Highest quality the source allows: H.264 (`libx264 -crf 18 -preset slow -pix_fmt yuv420p`), AAC 192k audio, `-movflags +faststart`. Keep the source frame rate. Don't upscale beyond what helps.
+- Highest quality the source allows, in a format every phone plays: H.264 Main or High profile at level 4.0–4.2 (`libx264 -profile:v high -level 4.1 -crf 18 -preset slow -pix_fmt yuv420p -tag:v avc1`), AAC 192k audio, `-movflags +faststart`. Keep the source frame rate. Don't upscale beyond what helps.
 
 ## 7. Files too big to upload
 If the video is too big to upload, explain simply how to trim or split it on their phone first:
