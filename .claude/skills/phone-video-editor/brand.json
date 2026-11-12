@@ -1,0 +1,10 @@
+{
+  "confirmed_by_user": false,
+  "source": "Taken from the website (css/style.css). Ask the user once to confirm or change, then set confirmed_by_user to true and never ask again.",
+  "color_primary": "#123d2e",
+  "color_primary_name": "dark green",
+  "color_accent": "#c7a35a",
+  "color_accent_name": "gold",
+  "font": "DejaVu Sans Bold",
+  "font_file": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+}
